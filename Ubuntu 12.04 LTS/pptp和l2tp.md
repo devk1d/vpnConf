@@ -67,6 +67,7 @@ PPTP:
 
 	iptables -t nat -A POSTROUTING -j SNAT --to $ip
 	iptables -t nat -A POSTROUTING -s 192.168.17.0/24 -o eth0 -j MASQUERADE
+	sysctl -p
 	
 	
 命令行执行，$ip 替换为你的vps ip地址
