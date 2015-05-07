@@ -193,6 +193,7 @@ protostack设置为netkey
 	
 	
 执行
+
 	ipsec verify
 	service xl2tpd restart
 	service ipsec restart
