@@ -2,8 +2,8 @@
 
 ## 安装
 
-apt-get install python-pip
-pip install shadowsocks
+	apt-get install python-pip
+	pip install shadowsocks
 
 ## 创建配置
 
