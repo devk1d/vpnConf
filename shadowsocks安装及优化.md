@@ -73,7 +73,7 @@
 	
 修改后执行 sysctl -p 使配置生效
 
-## 安装net-speeder
+## 安装net-speeder（可选）
 
 分别执行以下命令：
 
@@ -99,6 +99,11 @@
 		
 	screen -R
 	ssserver -c /etc/shadowsocks.json
+
+或者
+	
+	ssserver -c /etc/shadowsocks.json -d start
+
 
 Ctrl + c 退出 screen
 		
