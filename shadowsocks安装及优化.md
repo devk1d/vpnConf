@@ -7,7 +7,7 @@
 
 ## 创建配置
 
-vi /etc/shadowsocks.json
+	vi /etc/shadowsocks.json
 
 配置内容：
 
