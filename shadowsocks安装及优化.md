@@ -40,8 +40,8 @@
 
 增加以下两行
 
-	soft nofile 51200
-	hard nofile 51200
+	* soft nofile 51200
+	* hard nofile 51200
 
 启动shadowsocks服务器之前，设置以下参数
 
