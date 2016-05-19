@@ -100,10 +100,11 @@
 	screen -R
 	ssserver -c /etc/shadowsocks.json
 
+Ctrl + c 退出 screen
+
 或者
 	
 	ssserver -c /etc/shadowsocks.json -d start
 
 
-Ctrl + c 退出 screen
 		
