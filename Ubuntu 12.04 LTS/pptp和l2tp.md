@@ -2,6 +2,8 @@
 
 PPTP:
 
+一键脚本，亲测有效：https://github.com/viljoviitanen/setup-simple-pptp-vpn
+
 安装pptpd
 
 	apt-get update
