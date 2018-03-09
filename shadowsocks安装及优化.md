@@ -30,6 +30,34 @@
 	  "method": "aes-256-cfb"
 	}
 
+## 启动服务
+
+先安装 screen
+		
+	apt-get install screen
+
+然后 
+		
+	screen -R
+	ssserver -c /etc/shadowsocks.json
+
+Ctrl + c 退出 screen
+
+或者
+	
+	ssserver -c /etc/shadowsocks.json -d start
+
+设置开机启动
+	
+编辑 /etc/rc.local 文件
+
+	sudo vi /etc/rc.local
+
+在 exit 0 这一行的上边加入如下
+
+	/usr/local/bin/ssserver –c /etc/shadowsocks.json
+
+
 ## 优化
 
 第一步，增加系统文件描述符的最大限数
@@ -73,7 +101,7 @@
 	
 修改后执行 sysctl -p 使配置生效
 
-## 安装net-speeder（可选）
+### 安装net-speeder（可选）
 
 分别执行以下命令：
 
@@ -85,26 +113,10 @@
 
 	echo 'nohup /usr/local/net_speeder/net_speeder venet0 "ip" >/dev/null 2>&1 &' >> /etc/rc.local
 
-## 重启VPS
+### 重启VPS
 
 	reboot
 
-## 启动服务
-
-先安装 screen
-		
-	apt-get install screen
-
-然后 
-		
-	screen -R
-	ssserver -c /etc/shadowsocks.json
-
-Ctrl + c 退出 screen
-
-或者
-	
-	ssserver -c /etc/shadowsocks.json -d start
 
 
 		
