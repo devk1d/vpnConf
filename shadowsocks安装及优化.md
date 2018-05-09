@@ -20,7 +20,7 @@
 
 	    "10000": "password",
 
-	    "10001": "password",
+	    "10001": "password"
 	  },
 
 	  "timeout": 60,
